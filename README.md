@@ -21,4 +21,4 @@ You will then run the tcp2udp with arguments `--tcp-listen 0.0.0.0:{PLASMO_PUBLI
 
 No need to install any mod on the server (apart from Plasmo Voice), so this will work on any server architecture that is supported by Plasmo Voice (Proxies and Spigot forks included). This doesn't even need to run on the same server as the Minecraft server
 
-> I do expect you to know how to set up a Cloudflare tunnel if you have gotten this far into reading how to install the mod. If you don't, you can find more information about it in the [Modflared mod page](/mod/modflared)
+> I do expect you to know how to set up a Cloudflare tunnel if you have gotten this far into reading how to install the mod. If you don't, you can find more information about it in the [Modflared mod page](https://modrinth.com/mod/modflared)
