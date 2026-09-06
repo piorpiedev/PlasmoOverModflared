@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.7",
+  "package": "com.piorpie.pom.mixin",
+  "client": [
+    "plasmo.ModServerConnectionMixin",
+    "modflared.TunnelManagerAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

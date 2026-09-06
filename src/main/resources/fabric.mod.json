@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "plasmoovermodflared",
+  "version": "${version}",
+  "name": "PlasmoOverModflared",
+  "description": "Use Plasmo Voice over Cloudflare tunnels",
+  "authors": [
+    "Piorpie"
+  ],
+  "contact": {
+    "Piorpie": "contact@piorpie.com"
+  },
+  "license": "Apache-2.0 & MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.piorpie.pom.PlasmoOverModflared"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "modflared": ">=1.7.0",
+    "plasmovoice": ">=2.1.16"
+  },
+  "mixins": [
+    "plasmoovermodflared.mixins.json"
+  ]
+}
