@@ -35,12 +35,12 @@ public class Udp2Tcp implements AutoCloseable {
                 udpSocketAddress = packet.getSocketAddress();
 
                 Thread.ofVirtual().name("udp2tcp-tx").start(() -> startTx(packet, buff));
+                startRx(); // Reuse the same thread
             } catch (IOException e) {
+                boolean couldTransmit = canTransmit();
                 close();
-                throw new RuntimeException(e);
+                if (couldTransmit) throw new RuntimeException(e);
             }
-
-            startRx(); // Reuse the same thread
         });
     }
 
