@@ -41,7 +41,7 @@ At no point does the mod require for the Minecraft server itself to be accessed 
 - Mullvad's [udp-over-tcp](https://github.com/mullvad/udp-over-tcp) project. This mod is only possible due to porting their udp2tcp client in Java, and requires the server owner to host their tcp2udp server
 - [Plasmo Voice](https://modrinth.com/plugin/plasmo-voice), for the client and server mods/plugins that this mods lets you connect to
 - [Modflared](https://modrinth.com/mod/modflared), for the cloudflared tunnels manager and downloader
-- [Cloudflare](https://developers.cloudflare.com/), for their amazing infrastructure and the [cloudflared](https://github.com/cloudflare/cloudflared) binary, used by modflared and indirectly by this mod
+- [Cloudflare](https://developers.cloudflare.com/), for their amazing infrastructure and the [cloudflared](https://github.com/cloudflare/cloudflared) binary, used by Modflared and indirectly by this mod
 
 This project is not affiliated with any of the previously mentioned credited projects and teams
 
