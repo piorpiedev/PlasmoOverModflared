@@ -8,7 +8,7 @@ This mod runs a java implementation of Mullvad's [udp-over-tcp](https://github.c
 TCP_NODELAY is enabled to avoid buffering (just like in Mullvad's rust implementation)
 
 ## Client Installation
-If you are a player of the server, simply install the mod and the dependencies (Plasmo Voice and Modflared, and you are good to go)
+If you are a player of the server, simply install the mod and the dependencies (Plasmo Voice and Modflared), and you are good to go
 
 ## Server Installation
 Add the prefix `MODFLARED:` (case insensitive) to the ip under the [host.public] section, in the serverside Plasmo Voice config. Choose an arbitrary port or leave 0 to use the same port as your server (default)
