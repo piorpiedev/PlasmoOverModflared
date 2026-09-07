@@ -68,15 +68,15 @@ public class ModServerConnectionMixin {
 
     @Unique
     private void closeTunnel() {
-        if (tunnel != null) {
-            PlasmoOverModflared.LOGGER.info("[PlasmoOverModflared] Closing cloudflared tunnel");
-            Modflared.TUNNEL_MANAGER.closeTunnel(tunnel);
-            tunnel = null;
-        }
         if (udp2tcp != null) {
             PlasmoOverModflared.LOGGER.info("[PlasmoOverModflared] Closing udp2tcp tunnel");
             udp2tcp.close();
             udp2tcp = null;
+        }
+        if (tunnel != null) {
+            PlasmoOverModflared.LOGGER.info("[PlasmoOverModflared] Closing cloudflared tunnel");
+            Modflared.TUNNEL_MANAGER.closeTunnel(tunnel);
+            tunnel = null;
         }
     }
 
