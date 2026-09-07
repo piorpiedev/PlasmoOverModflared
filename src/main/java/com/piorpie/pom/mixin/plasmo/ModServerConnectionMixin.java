@@ -49,7 +49,7 @@ public class ModServerConnectionMixin {
         int tunnelPort = tunnel.access().tunnelAddress().getPort();
         PlasmoOverModflared.LOGGER.debug("[PlasmoOverModflared] Starting udp2tcp client");
         try {
-            this.udp2tcp = new Udp2Tcp(udpPort, new InetSocketAddress("127.0.0.1", tunnelPort), 64);
+            this.udp2tcp = new Udp2Tcp(udpPort, new InetSocketAddress("127.0.0.1", tunnelPort));
         } catch (SocketException e) {
             closeTunnel();
             throw new RuntimeException(e);
