@@ -112,6 +112,6 @@ public class Udp2Tcp implements AutoCloseable {
     }
 
     private boolean canTransmit() {
-        return !closed && !udpSocket.isClosed() && tcpSocket.isClosed();
+        return !closed && !udpSocket.isClosed() && !tcpSocket.isClosed();
     }
 }
