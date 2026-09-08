@@ -46,4 +46,4 @@ At no point does the mod require for the Minecraft server itself to be accessed 
 This project is not affiliated with any of the previously mentioned credited projects and teams
 
 ## Footnote
-If you are a developer, and would like to use the Java port of Mullvad's udp-over-tcp udp2tcp implementation, it is self-contained within `com.piorpie.pom.Udp2Tcp` in the src folder. Make sure to credit and/or mention me/this project as well as Mullvad team/original project, as per Apache 2.0 or MIT license specifications
+If you are a developer, and would like to use the Java port of Mullvad's udp-over-tcp udp2tcp implementation, it is self-contained within [`com.piorpie.pom.Udp2Tcp`](https://github.com/piorpiedev/PlasmoOverModflared/blob/master/src/main/java/com/piorpie/pom/Udp2Tcp.java) in the src folder. No dependencies needed, not even netty. Make sure to credit and/or mention me/this project as well as Mullvad team/original project, as per Apache 2.0 or MIT license specifications
