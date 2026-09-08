@@ -30,7 +30,7 @@ After compiling the binary, you need to execute it with arguments `--tcp-listen 
 
 You do not need to use `0.0.0.0` and `127.0.0.1` if you want to bind the tunnel to a specific IP, or forward traffic to a different host, however please note that the addresses need to be numeric IPs, as hostnames are not supported
 
-You don't need to install any mod on the server (apart from Plasmo Voice itself, even for another server architecture), meaning this will work even on Proxies and Spigot forks. However, make sure that the tcp2udp binary is always running, or users will not be able to connect to the voice chat. You might want to use a docker container or a system service. Examples are available in the [udp-over-tcp repository](https://github.com/mullvad/udp-over-tcp)
+You don't need to install any mod on the server (apart from Plasmo Voice itself, even for another server architecture), meaning this project is also compatible with Proxies and Spigot forks. However, make sure that the tcp2udp binary is always running, or users will not be able to connect to the voice chat. You might want to use a docker container or a system service. Examples are available in the [udp-over-tcp repository](https://github.com/mullvad/udp-over-tcp)
 
 > I do expect you to know how to set up a Cloudflare tunnel if you have gotten this far into reading this. If you don't, you can find a guide in the [Modflared mod page](https://modrinth.com/mod/modflared), or in the official [Cloudflare docs](https://developers.cloudflare.com/tunnel/setup/). You just need create a tunnel, no need to add the TXT record or configure a `force_tunnels.json` file like in Modflared
 
